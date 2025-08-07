@@ -1,0 +1,39 @@
+.parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+.scroller {
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+  color: var(--on-surface-variant);
+}
+
+.scroller span {
+  flex-shrink: 0;
+}
+
+/* Custom styling for the AI Powered text - More Subtle and Thinner */
+.custom-scroll-text {
+  color: var(--on-surface-variant);
+  opacity: 0.7;
+  font-weight: 300;
+  transition: opacity 0.3s ease;
+}
+
+.custom-scroll-text:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .scroller {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+}
